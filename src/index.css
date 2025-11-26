@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveClouds1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.clouds {
+  background: url("/img/cloude-blue.webp") repeat-x;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  top: 0;
+  left: 0;
+  animation: moveClouds 10s linear infinite;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.clouds1 {
+  background: url("/img/cloude-blue.webp") repeat-x;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  animation: moveClouds1 20s linear infinite;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.clouds2 {
+  background: url("/img/cloude-blue.webp") repeat-x;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  animation: moveClouds1 20s linear infinite;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.aeroplane {
+  background-image: url("../img/loadingAeroplane.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  position: absolute;
+  width: 100%; /* full width to scroll fully */
+  height: 85px; /* adjust as you need */
+  bottom: 0;
+  left: 0;
+
+  animation: moveLine 5s linear infinite;
+}
+
+@keyframes moveLine {
+  from {
+    background-position: -100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
