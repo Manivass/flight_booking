@@ -15,7 +15,7 @@ const TicketSlider = () => {
               <div className="flex flex-col">
                 <time>345</time>
                 <div className="flex flex-row">
-
+                  <span>Hello</span>
                 </div>
 
               </div>
